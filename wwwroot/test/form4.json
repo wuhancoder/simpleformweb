@@ -1,0 +1,74 @@
+{
+  "name": "Another form",
+  "action": "/form/form4/submit",
+  "submit": "Register",
+  "fields": [
+    {
+      "name": "email2",
+      "input": "text",
+      "type": "email",
+
+      "label": "Type Email11"
+    },
+    {
+      "name": "application",
+      "input": "file",
+      "type": "file",
+      "label": "Submit your application file"
+    },
+    {
+      "name": "email",
+      "input": "text",
+      "type": "email",
+      "label": "My Email11"
+    },
+    {
+      "name": "slection",
+      "input": "select",
+      "type": "radio",
+      "label": "Radio",
+      "options": [
+        {
+          "option": "Please make a selection",
+          "value": "0"
+        },
+        {
+          "option": "This is so cool",
+          "value": "1"
+        },
+        {
+          "option": "thank you",
+          "value": "2"
+        },
+        {
+          "option": "hello",
+          "value": "3"
+        }
+      ],
+      "validations": [
+        {
+          "type": "required"
+        },
+        {
+          "type": "pattern",
+          "expression": "123456"
+        }
+      ]
+    },
+    {
+      "name": "password",
+      "input": "text",
+      "type": "password",
+      "label": "My Password11",
+      "validations": [
+        {
+          "type": "required"
+        },
+        {
+          "type": "pattern",
+          "expression": "123456"
+        }
+      ]
+    }
+  ]
+}

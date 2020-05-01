@@ -1,0 +1,64 @@
+<head>
+  <script type="module" src="js/index.js"></script>
+  <script src="js/webcomponents-loader.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  />
+</head>
+<body>
+  <script>
+    window.ShadyDOM = {
+      force: true,
+    };
+    if (window.customElements) customElements.forcePolyfill = true;
+  </script>
+  <my-dropdown label="My first" name="my1"></my-dropdown>
+  <my-select label="My second" name="my2"></my-select>
+
+  <my-input
+    type="text"
+    label="My first"
+    name="my"
+    validations='[{"type":"required"}]'
+  ></my-input>
+
+  <my-input
+    type="password"
+    label="Password"
+    name="myp"
+    myvalidation="true"
+    pattern="[A-Za-z]{3}"
+  ></my-input>
+
+  <my-input
+    type="email"
+    label="Email"
+    name="email"
+    myvalidation="true"
+    pattern=".*\.us"
+  ></my-input>
+
+  <my-form
+    config="/test/test.json"
+    style="width: 500px; display: inline-block;"
+  >
+  </my-form>
+
+  <my-form
+    config="/test/form2.json"
+    style="width: 300px; display: inline-block;"
+  >
+  </my-form>
+  <my-form
+    config="/test/form3.json"
+    style="width: 300px; display: inline-block;"
+  >
+  </my-form>
+
+  <my-form
+    config="/test/form4.json"
+    style="width: 500px; display: inline-block;"
+  >
+  </my-form>
+</body>

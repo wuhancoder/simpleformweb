@@ -1,0 +1,21 @@
+{
+  "name": "Another form",
+  "action": "#",
+  "submit": "Register",
+  "fields": [
+    {
+      "name": "email2",
+      "input": "text",
+      "type": "email",
+
+      "label": "Type Email11"
+    },
+
+    {
+      "name": "email",
+      "input": "text",
+      "type": "email",
+      "label": "My Email11"
+    }
+  ]
+}

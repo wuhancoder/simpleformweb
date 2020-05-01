@@ -1,0 +1,54 @@
+{
+  "name": "TestForm1",
+  "action": "#",
+  "submit": "Submit",
+  "fields": [
+    {
+      "name": "email",
+      "input": "text",
+      "type": "email",
+      "label": "My Email11",
+      "icon": "add"
+    },
+    {
+      "name": "checkbox example",
+      "input": "select",
+      "type": "checkbox",
+      "label": "My Checkbox",
+      "options": [
+        {
+          "option": "Please make a selection",
+          "value": "0"
+        },
+        {
+          "option": "This is so cool",
+          "value": "1"
+        },
+        {
+          "option": "thank you",
+          "value": "2"
+        },
+        {
+          "option": "hello",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "name": "password",
+      "input": "text",
+      "type": "password",
+      "label": "My Password11",
+      "icon": "business ",
+      "validations": [
+        {
+          "type": "required"
+        },
+        {
+          "type": "pattern",
+          "expression": "123456"
+        }
+      ]
+    }
+  ]
+}
