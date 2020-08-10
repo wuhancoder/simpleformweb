@@ -30,6 +30,7 @@ namespace simpleformweb
             .Configure<FormServiceOption>(Configuration.GetSection("FormService"));
             services.AddScoped<IFileService, FileService>()
             .Configure<FileServiceOption>(Configuration.GetSection("FileService"));
+            services.AddApplicationInsightsTelemetry(Configuration["InstrumentKey"]);
 
 
         }
