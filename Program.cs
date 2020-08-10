@@ -37,6 +37,12 @@ namespace simpleformweb
                     keyVaultClient,
                     new DefaultKeyVaultSecretManager());
             }
+        }).ConfigureLogging((context, logging) =>
+        {
+            if (context.HostingEnvironment.IsProduction())
+            {
+                logging.AddApplicationInsights(context.Configuration["InstrumentKey"]);
+            }
         })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
