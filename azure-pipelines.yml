@@ -27,7 +27,7 @@ steps:
 - task: AzureWebApp@1
   displayName: 'Deploy Azure Web App'
   inputs:
-    azureSubscription: '5c63cbbf-af48-4817-954a-695d73b4eee4'
+    azureSubscription: 'simpleform'
     appName: SimpleUploadForDemo
     appType: 'webApp'
     package: $(Build.ArtifactStagingDirectory)/**/*.zip
